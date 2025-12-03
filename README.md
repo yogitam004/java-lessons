@@ -1,2 +1,2 @@
-# new-project
-I am practicing java for comp sci..
+# java-lessons
+I am learning some java for my csaea 3 class. 

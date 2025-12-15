@@ -25,7 +25,7 @@ public class Strings {
         System.out.println("name2 == name3: " + (name2 == name3)); // Even though it works in some cases, like here (string pool/ref), but not all (objs). 
 
         // compareTo for comparing lexicography (alphabetically) in UNICODE. Uppercase letters come before lowercase
-        // Link to unicode chart: https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0000
+    
         System.out.println("\nCompare: " + name1.compareTo(name2)); // returns -3 because Didi comes 3 letters before Gogo
 
         // CONCATENATION

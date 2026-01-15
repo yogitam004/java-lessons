@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class TwoDTester {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int[][] nums = new int[3][2];
+
+        for(int i = 0; i < nums.length; i++) {
+            for(int j = 0; j < nums[i].length; j++) {
+                System.out.println("Enter a value for row: " + i + ", and column: " + j);
+                nums[i][j] = input.nextInt();
+            }
+        }
+        input.close();
+
+        for(int i = 0; i < nums.length; i++) {
+            System.out.println();
+            for(int j = 0; j < nums[i].length; j++) {
+                System.out.print(nums[i][j] + " ");
+               
+            }
+        }
+        
+    }
+}

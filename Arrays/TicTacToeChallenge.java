@@ -41,42 +41,59 @@ public class TicTacToeChallenge {
             System.out.println();
         }
 
+        int win = 0;
+
         String w1 = "" + challenge[0][0] + challenge[0][1] + challenge[0][2];
                 if (w1.equalsIgnoreCase( "xxx")) {
                     System.out.println("x has won!");
+                    win += 1;
                 } else if (w1.equalsIgnoreCase("ooo")){
                     System.out.println("o was won!");
+                    win += 1;
                 }
         String w2 = "" + challenge[1][0] + challenge[1][1] + challenge[1][2];
                 if (w2.equalsIgnoreCase( "xxx")) {
                     System.out.println("x has won!");
+                    win += 1;
                 } else if (w2.equalsIgnoreCase("ooo")){
                     System.out.println("o was won!");
+                    win += 1;
                 }
         String w3 = "" + challenge[2][0] + challenge[2][1] + challenge[2][2];
                 if (w3.equalsIgnoreCase( "xxx")) {
                     System.out.println("x has won!");
+                    win += 1;
                 } else if (w3.equalsIgnoreCase("ooo")){
                     System.out.println("o was won!");
+                    win += 1;
                 }
         String w4 = "" + challenge[0][0] + challenge[1][0] + challenge[2][0];
                 if (w4.equalsIgnoreCase( "xxx")) {
                     System.out.println("x has won!");
+                    win += 1;
                 } else if (w4.equalsIgnoreCase("ooo")){
                     System.out.println("o was won!");
+                    win += 1;
                 }
         String w5 = "" + challenge[0][1] + challenge[1][1] + challenge[2][1];
                 if (w5.equalsIgnoreCase( "xxx")) {
                     System.out.println("x has won!");
+                    win += 1;
                 } else if (w5.equalsIgnoreCase("ooo")){
                     System.out.println("o was won!");
+                    win += 1;
                 }
         String w6 = "" + challenge[0][2] + challenge[1][2] + challenge[2][2];
                 if (w6.equalsIgnoreCase( "xxx")) {
                     System.out.println("x has won!");
+                    win += 1;
                 } else if (w6.equalsIgnoreCase("ooo")){
                     System.out.println("o was won!");
+                    win += 1;
                 }
+        if (win == 0 || win >= 2) {
+            System.out.println("...Looks like it's a draw!");
+        }
 
         
 

@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class ArrayListDemo {
     public static void main(String[] args){
@@ -44,9 +45,54 @@ public class ArrayListDemo {
         System.out.println(splitList);
 
         list.clear();//removes every element from the list
+
+        //Challenge 1: 
+
+        ArrayList<Integer> numbers = new ArrayList<Integer>(10); 
+        numbers.add(1);
+        numbers.add(56792);
+        numbers.add(-23);
+        numbers.add(493);
+        numbers.add(-9021);
+        numbers.add(5);
+        numbers.add(6432);
+        numbers.add(-56);
+        numbers.add(-4732);
+        numbers.add(21);
+        System.out.println("Array List: " + numbers);
+
+        for (int i = 0; i < numbers.size(); i++) {
+            if (!((numbers.get(i))/2 == 1)) {
+                numbers.remove(i);
+            }
+        }
+        System.out.println("New Array List: " + numbers);
+
+        //Challenge 2: 
+        ArrayList<String> guestList = new ArrayList<String>(); 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a guest name: ");
+        while (!(scanner.nextLine().equals("exit"))) { 
+            String guestName = scanner.nextLine();
+             if (guestList.contains(guestName)) {
+            System.out.println("This person is invited!");
+             } else { 
+                 guestList.add(guestName);
+             }
+        }
+        }
+
+        //Challenge 3: 
+
+    
+       
+       
+        
+        
+
         
     }
     
-}
+
 
 

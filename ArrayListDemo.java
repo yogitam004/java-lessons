@@ -80,9 +80,24 @@ public class ArrayListDemo {
                  guestList.add(guestName);
              }
         }
-        }
 
         //Challenge 3: 
+        ArrayList<String> groceryItems = new ArrayList<String>(); 
+        System.out.println("Enter a grocery food item: ");
+        String food = scanner.nextLine();
+        while (!(scanner.nextLine().equals("exit"))) {
+        if (groceryItems.contains(food)) {
+            System.out.println(groceryItems.indexOf(food));
+        } else {
+            System.out.println("Not Found");
+            groceryItems.add(food);
+        }
+    }
+        
+
+        }
+
+        
 
     
        

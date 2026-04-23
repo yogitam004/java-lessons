@@ -1,5 +1,5 @@
 public class Strings {
-    public static void mian(String[] args) {
+    public static void main(String[] args) {
         String nameObj = new String("Didi");
         // D i d i - like a list of characters
         // 0 1 2 3

@@ -17,7 +17,7 @@ public class UserInput {
       double height = Double.parseDouble(input.nextLine());
       System.out.println("You are " + height + " meters tall.");
 
-      
+
       
 
     }
